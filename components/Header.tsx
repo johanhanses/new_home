@@ -6,7 +6,7 @@ interface IHeaderProps {
 
 export const Header = ({ siteTitle }: IHeaderProps) => {
   return (
-    <div className="bg-transparent flex items-center justify-center">
+    <div className="bg-transparent flex items-center justify-center font-nunito">
       <div className="max-w-4xl p-4 text-xl">
         <nav className="space-x-4">
           <Link href="/">

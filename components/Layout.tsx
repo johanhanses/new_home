@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Header } from './Header';
 
 interface ILayoutProps {
@@ -8,7 +7,7 @@ interface ILayoutProps {
 export const Layout = ({ children }: ILayoutProps) => (
   <>
     <Header siteTitle="Johan Hanses" />
-    <div className="mx-auto max-w-4xl p-4 pt-0">
+    <div className="mx-auto max-w-4xl p-4 pt-0 font-nunito">
       <main>{children}</main>
       <footer className="flex justify-center">
         © {new Date().getFullYear()}, Built with
