@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -17,7 +17,8 @@ class MyDocument extends Document {
           />
           <link rel="shortcut icon" href="/praisethesun.ico" />
         </Head>
-        <body>
+
+        <body className="dark:bg-black dark:text-white">
           <Main />
           <NextScript />
         </body>

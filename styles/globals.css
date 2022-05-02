@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 .megahover {
-  color: black;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -17,7 +16,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  @apply bg-black/80 dark:bg-white/80;
   transform-origin: bottom right;
   transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }

@@ -1,10 +1,15 @@
 import Link from 'next/link';
+import { useTheme } from 'next-themes';
+import Moon from './svg/moon';
+import Sun from './svg/sun';
 
 interface IHeaderProps {
   siteTitle: string;
 }
 
 export const Header = ({ siteTitle }: IHeaderProps) => {
+  const { theme, setTheme } = useTheme();
+
   return (
     <div className="bg-transparent flex items-center justify-center font-nunito">
       <div className="max-w-4xl p-4 text-xl">
@@ -26,6 +31,14 @@ export const Header = ({ siteTitle }: IHeaderProps) => {
           >
             GitHub
           </a>
+          <button
+            name="Change Theme"
+            aria-label="Change Theme"
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            className="hover:text-yellow-500"
+          >
+            {theme === 'dark' ? <Sun /> : <Moon />}
+          </button>
         </nav>
       </div>
     </div>
