@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
-import Moon from './svg/moon';
-import Sun from './svg/sun';
+import Moon from './svg/Moon';
+import Sun from './svg/Sun';
 
 interface IHeaderProps {
   siteTitle: string;
