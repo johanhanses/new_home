@@ -10,11 +10,7 @@ export const Layout = ({ children }: ILayoutProps) => (
     <div className="mx-auto max-w-4xl p-4 pt-0 font-nunito">
       <main>{children}</main>
       <footer className="flex justify-center">
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://nextjs.org" className="ml-1 hover:underline">
-          Nextjs
-        </a>
+        © {new Date().getFullYear()}
       </footer>
     </div>
   </>

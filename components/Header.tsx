@@ -12,8 +12,11 @@ export const Header = ({ siteTitle }: IHeaderProps) => {
           <Link href="/">
             <a className="megahover">{siteTitle}</a>
           </Link>
-          <Link href="/blog">
+          {/* <Link href="/blog">
             <a className="megahover">Blog</a>
+          </Link> */}
+          <Link href="/about">
+            <a className="megahover">About</a>
           </Link>
           <a
             href="https://github.com/johanhanses"
