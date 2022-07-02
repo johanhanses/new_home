@@ -1,8 +1,8 @@
-import { About } from '../components/About';
-import { Layout } from '../components/Layout';
-import { Seo } from '../components/Seo';
+import { About } from '../components/About'
+import { Layout } from '../components/Layout'
+import { Seo } from '../components/Seo'
 
-const IndexPage = () => (
+const AboutPage = () => (
   <Layout>
     <Seo
       title="About | Johan Hanses"
@@ -11,6 +11,6 @@ const IndexPage = () => (
     />
     <About />
   </Layout>
-);
+)
 
-export default IndexPage;
+export default AboutPage

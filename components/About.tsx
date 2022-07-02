@@ -1,7 +1,7 @@
 export const About = () => {
-  const URL = 'https://worklygroup.com';
-  const mailURL = 'mailto:johanhanses@gmail.com';
-  const linkedInURL = 'https://www.linkedin.com/in/johanhanses/';
+  const URL = 'https://worklygroup.com'
+  const mailURL = 'mailto:johanhanses@gmail.com'
+  const linkedInURL = 'https://www.linkedin.com/in/johanhanses/'
 
   const Content = () => (
     <p className="mb-4 text-xl">
@@ -15,7 +15,7 @@ export const About = () => {
         Workly
       </a>
     </p>
-  );
+  )
 
   const Links = () => (
     <p className="text-base space-x-4">
@@ -31,7 +31,7 @@ export const About = () => {
 
       <a
         aria-label="LinkedIn"
-        href="https://www.linkedin.com/in/johanhanses/"
+        href={linkedInURL}
         target="_blank"
         rel="noopener noreferrer"
         className="megahover"
@@ -39,14 +39,12 @@ export const About = () => {
         LinkedIn
       </a>
     </p>
-  );
+  )
 
   return (
-    <div className="flex items-center justify-center h-[78vh]">
-      <div className="text-center">
-        <Content />
-        <Links />
-      </div>
+    <div className="text-center">
+      <Content />
+      <Links />
     </div>
-  );
-};
+  )
+}
